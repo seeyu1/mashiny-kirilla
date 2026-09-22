@@ -4,37 +4,111 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Машины Кирилла — Уход</title>
+  <meta name="description" content="Как Кирилл моет универсал, проверяет шины и свет.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sheet">
-    <header>
-      <svg class="mark" viewBox="0 0 72 72" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="18" y="26" width="30" height="16" rx="3"/>
-          <path d="M24 42v8h18v-8"/>
-          <path d="M28 26c1-6 9-6 10 0"/>
-          <path d="M48 18c4 2 6 6 4 10"/>
-        </g>
-      </svg>
-      <div class="site-name">Машины Кирилла</div>
-      <nav>
-        <a href="index.html">Главная</a>
-        <a href="uhod.html" aria-current="page">Уход</a>
-        <a href="poezdka.html">Поездка</a>
-        <a href="modeli.html">Модели</a>
-        <a href="zhurnal.html">Журнал</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Уход за машиной</h1>
-      <p><strong>Мойка.</strong> Сначала Кирилл моет кузов, потом колёса отдельной губкой, чтобы песок не царапал краску.</p>
-      <p><strong>Шины.</strong> Раз в две недели он проверяет давление, пока резина ещё холодная.</p>
-      <p><strong>Масло.</strong> Щуп вытирает, вставляет снова и смотрит, чтобы след был между двумя метками.</p>
-      <p><strong>Свет.</strong> Перед дальней дорогой включает фары, повороты и стоп-сигналы.</p>
-      <p><strong>Салон.</strong> Коврики вытряхивает во дворе, а стёкла изнутри протирает сухой тряпкой.</p>
-    </main>
-    <footer>Кирилл · семейная машина с этой весны</footer>
-  </div>
+  <div class="progress"></div>
+  <header class="top">
+    <a class="logo" href="index.html">Кирилл</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Меню"><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="uhod.html" aria-current="page">Уход</a>
+      <a href="poezdka.html">Поездка</a>
+      <a href="modeli.html">Модели</a>
+      <a href="zhurnal.html">Журнал</a>
+    </nav>
+  </header>
+
+  <section class="hero short">
+    <div class="hero-media">
+      <img src="photos/wash.jpg" alt="Мойка тёмно-зелёного крыла: губка, пена и мокрое колесо">
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Субботний ритуал</p>
+      <h1>Уход<br>за машиной</h1>
+      <p class="lede">Сначала кузов, потом колёса. Песок с резины не должен попасть на краску, поэтому губки разные.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="wrap split">
+        <div class="prose reveal">
+          <p class="kicker">Мойка</p>
+          <h2>Вода сверху вниз</h2>
+          <p>Кирилл начинает с крыши и капота, пока пыль ещё не стала грязью на порогах. Жёлтая губка идёт по крылу мягко, без кругов на сухой пыли.</p>
+          <p>Колёса моет последними и другой стороной двора, чтобы брызги не сели обратно на только что промытый борт. После воды кузов не вытирает на солнце полотенцем: капли сами стекают с тёмной краски.</p>
+        </div>
+        <figure class="reveal">
+          <div class="frame">
+            <img src="photos/front.jpg" alt="Универсал анфас на чистом бетоне двора">
+          </div>
+          <figcaption>После мойки машина снова стоит ровно посреди двора.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0">
+      <div class="wrap grid-2">
+        <article class="note reveal">
+          <p class="kicker">Шины</p>
+          <h2>Пока резина холодная</h2>
+          <p>Раз в две недели Кирилл смотрит давление до поездки. Тёплая шина показывает больше, чем есть на самом деле, поэтому проверка бывает утром, во дворе.</p>
+          <p>В мае правое переднее оказалось заметно ниже остальных. Он подкачал его у дома и записал это одной строкой.</p>
+        </article>
+        <article class="note reveal">
+          <p class="kicker">В машине</p>
+          <h2>Три вещи на сиденье</h2>
+          <p>Перчатки, маленький фонарик и тетрадь. Фонарик нужен у гаража, когда уже темно и надо увидеть, горит ли лампа, а не просто красное пятно на двери.</p>
+          <p>Тетрадь тонкая специально. В неё помещаются дата, маршрут и одно замечание, не больше.</p>
+        </article>
+      </div>
+      <div class="wrap" style="margin-top: 22px">
+        <figure class="reveal">
+          <div class="frame">
+            <img src="photos/cabin.jpg" alt="На сиденье лежат перчатки, фонарик и закрытая тетрадь">
+          </div>
+          <figcaption>Дверь открыта, пока Кирилл ещё во дворе.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band">
+      <img src="photos/evening.jpg" alt="Вечером у гаража горят фары и стоп-сигнал, асфальт мокрый">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker">Свет</p>
+          <h2 class="quote">Багажник поднят, стоп-сигнал ложится на дверь гаража. Так видно обе стороны сразу.</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker">Порядок субботы</p>
+          <h2>Пять шагов и можно закрывать двор</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span>01</span><h3>Кузов</h3><p>Вода сверху вниз, отдельная губка, без спешки на сухой пыли.</p></li>
+          <li class="reveal"><span>02</span><h3>Колёса</h3><p>Другая губка и взгляд на протектор: камешек в канавке лучше вынуть сразу.</p></li>
+          <li class="reveal"><span>03</span><h3>Давление</h3><p>Четыре шины, пока они холодные. Заметную разницу Кирилл не оставляет «на потом».</p></li>
+          <li class="reveal"><span>04</span><h3>Свет</h3><p>Фары, повороты и стоп-сигналы. Вечером это удобнее: отражение видно на мокром асфальте.</p></li>
+          <li class="reveal"><span>05</span><h3>Ключ</h3><p>После всего ключ возвращается на крючок у двери, а не остаётся в замке.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Кирилл · тёмно-зелёный универсал</p>
+    <p>Мойка, шины, свет</p>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>

@@ -3,39 +3,102 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Машины Кирилла — Главная</title>
+  <title>Машины Кирилла</title>
+  <meta name="description" content="Кирилл и семейный тёмно-зелёный универсал: двор, уход, короткие поездки и журнал.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sheet">
-    <header>
-      <svg class="mark" viewBox="0 0 72 72" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 44h48"/>
-          <circle cx="24" cy="44" r="5"/>
-          <circle cx="50" cy="44" r="5"/>
-          <path d="M16 44v-6h6l8-10h16l8 8h8v8"/>
-          <path d="M30 28v8h14"/>
-        </g>
-      </svg>
-      <div class="site-name">Машины Кирилла</div>
-      <nav>
-        <a href="index.html" aria-current="page">Главная</a>
-        <a href="uhod.html">Уход</a>
-        <a href="poezdka.html">Поездка</a>
-        <a href="modeli.html">Модели</a>
-        <a href="zhurnal.html">Журнал</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Машины Кирилла</h1>
-      <p><strong>Утро.</strong> По субботам Кирилл выходит во двор к машине, пока ещё тихо и кузов не горячий.</p>
-      <p><strong>Начало.</strong> Всё началось с отцовской «Шкоды»: сначала только мойка, потом шины и уровень масла.</p>
-      <p><strong>Маршрут.</strong> Ему нравятся короткие выезды за город, без спешки и без ночной трассы.</p>
-      <p><strong>Звук.</strong> На холодном запуске он слушает холостой ход: ровный звук значит, что мотор спокоен.</p>
-      <p><strong>Порядок.</strong> В бардачке лежат перчатки, фонарик и тонкая тетрадь для заметок.</p>
-    </main>
-    <footer>Кирилл · семейная машина с этой весны</footer>
-  </div>
+  <div class="progress"></div>
+  <header class="top">
+    <a class="logo" href="index.html">Кирилл</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Меню"><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="uhod.html">Уход</a>
+      <a href="poezdka.html">Поездка</a>
+      <a href="modeli.html">Модели</a>
+      <a href="zhurnal.html">Журнал</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media">
+      <img src="photos/hero.jpg" alt="Тёмно-зелёный универсал Volvo во дворе, багажник открыт">
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Семейный универсал</p>
+      <h1>Машины<br>Кирилла</h1>
+      <p class="lede">По субботам во дворе стоит тёмно-зелёный Volvo. Багажник ещё открыт, свет мягкий, и Кирилл обходит машину до первой поездки.</p>
+    </div>
+    <a class="scroll-hint" href="#story">Дальше</a>
+  </section>
+
+  <main>
+    <section class="section" id="story">
+      <div class="wrap split">
+        <div class="prose reveal">
+          <p class="kicker">01 — Двор</p>
+          <h2>Ключ от семейной машины</h2>
+          <p>Этой весной отец доверил Кириллу универсал. Сначала была только мойка: отдельная губка для кузова и другая для колёс, чтобы песок не оставил дугу на краске.</p>
+          <p>Потом появились давление в шинах, проверка света и тонкая тетрадь. Она лежит не в бардачке, а на сиденье вместе с перчатками и фонариком — так её видно до того, как захлопнется дверь.</p>
+          <p>Кирилл не гоняет. Ему нравится, когда машина предсказуема: ровный холостой ход, чистые стёкла и короткая дорога, которую он уже знает.</p>
+        </div>
+        <figure class="reveal">
+          <div class="frame">
+            <img src="photos/kirill.jpg" alt="Кирилл в тёмной куртке стоит у водительской двери">
+          </div>
+          <figcaption>Суббота. Багажник ещё не закрыт, ключ пока у Кирилла.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker">02 — Куда смотреть</p>
+          <h2>Три части одного увлечения</h2>
+        </div>
+        <div class="cards" style="margin-top: 28px">
+          <a class="card reveal" href="uhod.html">
+            <img src="photos/wash.jpg" alt="Руки моют переднее крыло жёлтой губкой">
+            <div>
+              <h3>Уход</h3>
+              <p>Мойка, холодные шины, свет у гаража и вещи, которые всегда в машине.</p>
+            </div>
+          </a>
+          <a class="card reveal" href="poezdka.html">
+            <img src="photos/road.jpg" alt="Универсал едет по дороге вдоль реки и берёз">
+            <div>
+              <h3>Поездка</h3>
+              <p>От круга вокруг машины до остановки на траве у реки.</p>
+            </div>
+          </a>
+          <a class="card reveal" href="zhurnal.html">
+            <img src="photos/cabin.jpg" alt="Перчатки, фонарик и тетрадь на водительском сиденье">
+            <div>
+              <h3>Журнал</h3>
+              <p>Март, апрель, май и июнь: короткие записи без длинных заметок.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <img src="photos/river.jpg" alt="Тот же универсал стоит на траве у спокойной реки">
+      <div class="wrap">
+        <p class="quote reveal">Сорок шесть километров до реки. В тетради после этого дня две строки: ветер и чистые стёкла.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Кирилл · тёмно-зелёный универсал</p>
+    <p>Двор, короткие дороги, тетрадь на сиденье</p>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>

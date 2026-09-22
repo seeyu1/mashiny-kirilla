@@ -4,37 +4,100 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Машины Кирилла — Поездка</title>
+  <meta name="description" content="Как Кирилл выезжает из двора и доезжает до реки.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sheet">
-    <header>
-      <svg class="mark" viewBox="0 0 72 72" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M10 54 L30 22 h12 L62 54"/>
-          <path d="M36 50 V30"/>
-          <path d="M30 40 h12"/>
-        </g>
-      </svg>
-      <div class="site-name">Машины Кирилла</div>
-      <nav>
-        <a href="index.html">Главная</a>
-        <a href="uhod.html">Уход</a>
-        <a href="poezdka.html" aria-current="page">Поездка</a>
-        <a href="modeli.html">Модели</a>
-        <a href="zhurnal.html">Журнал</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Как проходит поездка</h1>
-      <p><strong>Осмотр.</strong> Кирилл обходит машину кругом: шины, номера и нет ли ничего под колёсами.</p>
-      <p><strong>Запуск.</strong> Мотору даёт полминуты поработать и только потом трогается с места.</p>
-      <p><strong>Город.</strong> В потоке держит дистанцию и не обгоняет на узкой улице.</p>
-      <p><strong>Трасса.</strong> На прямой смотрит на температуру и не держит высокую скорость долго.</p>
-      <p><strong>Пауза.</strong> На заправке проверяет, не села ли стрелка топлива слишком низко.</p>
-      <p><strong>Возврат.</strong> Дома записывает километры и одну строку, если по дороге что-то стучало.</p>
-    </main>
-    <footer>Кирилл · семейная машина с этой весны</footer>
-  </div>
+  <div class="progress"></div>
+  <header class="top">
+    <a class="logo" href="index.html">Кирилл</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Меню"><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="uhod.html">Уход</a>
+      <a href="poezdka.html" aria-current="page">Поездка</a>
+      <a href="modeli.html">Модели</a>
+      <a href="zhurnal.html">Журнал</a>
+    </nav>
+  </header>
+
+  <section class="hero short">
+    <div class="hero-media">
+      <img src="photos/road.jpg" alt="Тёмно-зелёный универсал на дороге между берёзами и рекой">
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Короткий маршрут</p>
+      <h1>Как проходит<br>поездка</h1>
+      <p class="lede">Не ночная трасса и не городская гонка. Дорога вдоль реки, которую можно проехать спокойно и вернуться засветло.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="wrap split">
+        <div class="reveal">
+          <p class="kicker">До поворота ключа</p>
+          <h2>Круг вокруг машины</h2>
+          <ol class="steps">
+            <li>
+              <span>01</span>
+              <h3>Осмотр</h3>
+              <p>Кирилл обходит универсал: шины, номера, нет ли под колёсами ветки или игрушки из соседнего двора. Багажник закрывает только после этого круга.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>Запуск</h3>
+              <p>Мотору даёт около полминуты. Слушает холостой ход. Если звук ровный, можно выезжать со двора, не газуя на месте.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>Город</h3>
+              <p>До выезда к реке он держит дистанцию и не обгоняет на узкой улице. Универсал длинный, во дворе это уже известно, на дороге тем более.</p>
+            </li>
+          </ol>
+        </div>
+        <figure class="reveal dials">
+          <div class="frame">
+            <img src="photos/dials.jpg" alt="Крупно стрелки спидометра и тахометра в тёплом свете">
+          </div>
+          <figcaption>На прямой он смотрит на температуру, а не только на скорость.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band">
+      <img src="photos/river.jpg" alt="Универсал припаркован на траве у реки, багажник открыт">
+      <div class="wrap">
+        <p class="quote reveal">Остановка на траве. Багажник снова открыт: так проще достать воду и не хлопать дверью у самой воды.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split reverse">
+        <div class="prose reveal">
+          <p class="kicker">Обратно</p>
+          <h2>Та же дорога, другой свет</h2>
+          <p>У реки Кирилл не задерживается надолго. Смотрит стёкла, топливо и то, не сел ли звук мотора после прогрева. Если всё спокойно, разворачивается на широком месте, не на узкой обочине.</p>
+          <p>Дома записывает километры. В апреле их было сорок шесть. Рядом пометил ветер: на обратном пути он прижимал пыльцу к стеклу, и дворники понадобились один раз.</p>
+          <p>Ключ после поездки вешает на крючок. Машина остаётся во дворе, багажник закрыт, тетрадь снова на сиденье до следующей субботы.</p>
+        </div>
+        <figure class="reveal">
+          <div class="frame">
+            <img src="photos/evening.jpg" alt="Вечер, фары включены, красный свет стоп-сигнала на двери гаража">
+          </div>
+          <figcaption>Если возвращение позднее, свет проверяет уже у гаража.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Кирилл · тёмно-зелёный универсал</p>
+    <p>Двор, река, сорок шесть километров</p>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>
