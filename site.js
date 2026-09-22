@@ -1,5 +1,39 @@
 document.documentElement.classList.add("js");
 
+(function () {
+  var frame = document.querySelector("[data-show]");
+  if (!frame) return;
+  var imgs = Array.prototype.slice.call(frame.querySelectorAll("img"));
+  var caps = (frame.getAttribute("data-caps") || "").split("|");
+  var cap = document.querySelector("[data-show-cap]");
+  var num = document.querySelector("[data-show-num]");
+  var bar = document.querySelector("[data-show-bar]");
+  var index = 0;
+  var timer = 0;
+  function show(next) {
+    imgs[index].classList.remove("is-on");
+    index = (next + imgs.length) % imgs.length;
+    imgs[index].classList.add("is-on");
+    if (cap) cap.textContent = caps[index] || "";
+    if (num) num.textContent = (index + 1) + " / " + imgs.length;
+    if (bar) {
+      bar.classList.remove("run");
+      void bar.offsetWidth;
+      bar.classList.add("run");
+    }
+  }
+  function arm() {
+    clearInterval(timer);
+    timer = setInterval(function () { show(index + 1); }, 3600);
+  }
+  var prev = document.querySelector("[data-show-prev]");
+  var nextBtn = document.querySelector("[data-show-next]");
+  if (prev) prev.addEventListener("click", function () { show(index - 1); arm(); });
+  if (nextBtn) nextBtn.addEventListener("click", function () { show(index + 1); arm(); });
+  if (bar) bar.classList.add("run");
+  arm();
+})();
+
 var intro = document.querySelector(".intro");
 if (intro) {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
